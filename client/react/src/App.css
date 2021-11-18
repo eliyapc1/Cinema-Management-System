@@ -1,0 +1,76 @@
+.App-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 300;
+}
+.container {
+  display: block;
+  background-color: #f7f7f7;
+  height: 100vh;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.login {
+  width: 35%;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+.login-footer {
+  text-align: center;
+  padding: 20px;
+}
+.login-footer button {
+  margin-bottom: 15px;
+}
+.page {
+  height: 95%;
+  background-color: #ffffff;
+  padding-top: 10px;
+  text-align: center;
+}
+.all-movies {
+  height: 90%;
+  overflow-y: scroll;
+}
+.movie {
+  text-align: center;
+}
+.card-header {
+  background-color: #F7F7F7;
+  /* border: 1px solid #0D6EFD; */
+  color: #0D6EFD;
+}
+.card {
+  margin: 0 auto;
+}
+.card ul {
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.all-members {
+  height: 90%;
+  overflow-y: scroll;
+}
+.add-form-div form {
+  width: 300;
+  margin: 0 auto;
+  padding: 20;
+  background-color: "#F7F7F7";
+  border: "1px solid #094CB0";
+  border-radius: 5;
+}
+.not-found-page {
+  padding-top: 200;
+  color: rgb(190, 0, 0);
+}
+.no-perms-page {
+  padding-top: 200;
+  color: rgb(190, 0, 0);
+}
