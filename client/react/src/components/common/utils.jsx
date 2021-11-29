@@ -67,7 +67,6 @@ const deleteData = async (domain, id, renderParent) => {
 };
 
 const joiValid = (obj, schema) => {
-  console.log(obj);
   const result = Joi.validate(obj, schema, { abortEarly: false });
   if (!result.error) return null;
   const joiErrors = {};

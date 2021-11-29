@@ -17,7 +17,8 @@ const AddSub = () => {
           style={{
             textAlign: "center",
             margin: "0 auto",
-            width: 350,
+            width: 400,
+            maxWidth: "100%",
             marginBottom: 20,
           }}
         >

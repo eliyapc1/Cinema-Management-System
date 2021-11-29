@@ -58,7 +58,8 @@ const NewUser = ({ history }) => {
   };
 
   return (
-    <div className="login">
+    <div className="login" style={{ width: 500, maxWidth: "80%" }}>
+      <h1>Create Password</h1>
       {!valid.usernameExist ? (
         <div className="alert alert-danger">
           Username was not found. <br /> Please request username from admin.
@@ -72,6 +73,7 @@ const NewUser = ({ history }) => {
         <Input
           name="username"
           label="Username "
+          autoFocus={true}
           onChange={(e) => {handleInput(e, newUser, setNewUser); setErrors({...errors, username: ""})}}
           error={errors.username}
         />

@@ -11,8 +11,6 @@ const AllMembers = ({ history }) => {
     return () => setMembers([]);
   }, [render]);
 
-  console.log(members);
-  
   const membersRe = members.map((member, i) => (
     <Member
       key={i}

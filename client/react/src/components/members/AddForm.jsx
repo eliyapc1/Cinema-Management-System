@@ -8,6 +8,7 @@ const AddForm = ({ handleInput, handleCheck, sendData, errors }) => {
         onSubmit={sendData}
         style={{
           width: 400,
+          maxWidth: "100%",
           margin: "0 auto",
           padding: 20,
           backgroundColor: "white",
@@ -27,18 +28,16 @@ const AddForm = ({ handleInput, handleCheck, sendData, errors }) => {
           name="email"
           label="Email: "
           onChange={handleInput}
-          autoFocus={true}
           error={errors.email ? "Email is required": null}
         />
         <Input
           name="city"
           label="City: "
           onChange={handleInput}
-          autoFocus={true}
           error={errors.city ? "City is required": null}
         />
         <br />
-        <div className="btn-group" style={{marginLeft: 110}}>
+        <div className="btn-group" style={{ width: "100%" }}>
           <button className="btn btn-primary" type="submit">Add</button>
           <NavLink className="btn btn-outline-danger" to="/subscriptions/all">Cancel</NavLink>
         </div>

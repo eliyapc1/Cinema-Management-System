@@ -17,6 +17,7 @@ const EditMember = ({ location: { state: originalMember } }) => {
             textAlign: "center",
             margin: "0 auto",
             width: 350,
+            maxWidth: "100%",
             marginBottom: 20,
           }}
         >

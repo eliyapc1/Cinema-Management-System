@@ -9,8 +9,8 @@ const HomeNavBar = ({ history }) => {
     window.location.reload();
   };
   return (
-    <div className="home-nav" style={{padding: 20}}>
-      <div className="btn-group btn-group-lg">
+    <div style={{padding: 20}}>
+      <div className="btn-group btn-group-lg flex-wrap">
         <NavLink className="btn btn-outline-primary" to="/movies">
           Movies
         </NavLink>

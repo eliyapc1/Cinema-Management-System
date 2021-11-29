@@ -14,7 +14,7 @@ const EditMovie = ({ location: { state: originalMovie } }) => {
     premiered: "",
   });
   return (
-    <div style={{ textAlign: "left" }}>
+    <div>
       {sent && (
         <div
           className="alert alert-success"

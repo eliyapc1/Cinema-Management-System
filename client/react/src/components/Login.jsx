@@ -11,13 +11,14 @@ const Login = ({ history }) => {
     errors: { username: "", password: "" },
   });
   return (
-    <div className="login">
+    <div className="login" style={{width: 500, maxWidth: "80%"}}>
       <h1>Login</h1> <br />
       {invalidMessage ? (
         <div className="alert alert-danger">{invalidMessage}</div>
       ) : null}
       {/* prettier-ignore */}
-      <form onSubmit={(e) => validateLogin(e, login, setLogin,setInvalidMsg, history)}>
+
+      <form className="col-sm" onSubmit={(e) => validateLogin(e, login, setLogin,setInvalidMsg, history)}>
         <Input
           name="username"
           label="Username "

@@ -26,6 +26,7 @@ const UserForm = ({ handleInput, handleCheck, sendData, userData, errors }) => {
         onSubmit={sendData}
         style={{
           width: 400,
+          maxWidth: "100%",
           margin: "0 auto",
           padding: 20,
           backgroundColor: "white",
@@ -68,7 +69,8 @@ const UserForm = ({ handleInput, handleCheck, sendData, userData, errors }) => {
         Created Date: {date}
         <h3>Permissions:</h3>
         <div>{checkboxRe}</div>
-        <div className="btn-group" style={{ marginLeft: 110, marginTop: 20 }}>
+        <br />
+        <div className="btn-group" style={{ width: "100%" }}>
           <button className="btn btn-primary" type="submit">
             Save
           </button>

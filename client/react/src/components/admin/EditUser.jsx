@@ -50,6 +50,7 @@ const EditUser = ({ location: { state: user } }) => {
           textAlign: "center",
           margin: "0 auto",
           width: 350,
+          maxWidth: "100%",
           marginBottom: 20,
         }}
       >
@@ -73,6 +74,7 @@ const EditUser = ({ location: { state: user } }) => {
         userData={userData}
         errors={errors}
       />
+      <br />
     </div>
   );
 };

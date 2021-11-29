@@ -8,7 +8,7 @@ import NotFound from "../NotFound";
 const SubsNavBar = ({ match: { url } }) => {
   return (
     <div className="page">
-      <div className="btn-group" style={{ marginBottom: 10 }}>
+      <div className="btn-group" style={{ marginBottom: 20 }}>
         <NavLink className="btn btn-outline-primary" to={`${url}/all`}>All Members</NavLink>
         <NavLink className="btn btn-outline-primary" to={`${url}/add`}>Add Member</NavLink>{" "}
       </div>

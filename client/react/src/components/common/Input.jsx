@@ -2,9 +2,8 @@ import React from "react";
 
 const Input = ({ name, label, onChange, value, autoFocus, type, error, min, max }) => {
   return (
-    <div>
-      <div className="form-group">
-        <label htmlFor={name}>{label}</label>
+    <div className="mb-3">
+        <label className="form-label" htmlFor={name}>{label}</label>
         <input
           type={type}
           id={name}
@@ -16,8 +15,7 @@ const Input = ({ name, label, onChange, value, autoFocus, type, error, min, max 
           min={min}
           max={max}
           />
-        {error && <div className="alert alert-danger">{error}</div>}
-      </div>
+        {error && <div className="alert alert-danger" style={{width: "fit-content"}}>{error}</div>}
     </div>
   );
 };
